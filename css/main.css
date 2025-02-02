@@ -1,0 +1,150 @@
+* {
+	box-sizing: border-box;
+}
+
+.Head {
+	background-color: rgb(73, 197, 16);
+	padding: 10px;
+	margin: 10px 0;
+}
+
+body {
+	padding: 0 20px;
+	background-color: lightsteelblue;
+	font-family: Arial, Helvetica, sans-serif;
+	color: whitesmoke;
+}
+
+ul.navigation {
+	list-style-type:none;
+  	overflow: hidden;
+}
+
+li.navigation {
+	float: left;
+  }
+
+li a {
+	display: block;
+	color: green;
+	text-align: center;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.Main {
+	display:contents;
+	width: 100%;
+	height: 100%;
+    align-items:flex-end;
+}
+
+.SettingsSection
+{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+
+.MapSection {
+    display: flex; 
+    width: 100%;
+    height:auto; /* Adjust as needed */
+}
+
+.GoogleMap{
+	flex-grow: 3;
+    position: relative;
+    height:400px;
+	display : block;
+}
+
+.Places {
+	flex-grow: 1;
+	padding: 10px;
+	background-color: #63949b;
+	box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	display: block;
+}
+
+.PlacesList header h4 {
+	margin: 0;
+	margin-bottom: 15px;
+	font-size: 1.2rem;
+}
+
+.places-container {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	overflow-y: auto; /* Enable scrolling */
+	max-height: calc(100% - 50px); /* Adjust for padding or header height */
+	border-radius: 5px;
+}
+
+.place {
+	/* flex-grow: 20; */
+
+	display: flex;
+	/* justify-content:space-evenly ; */
+	align-items: right;
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: #a4b8bb;
+	color: #0056b3;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.place span {
+	flex-grow: 50;
+}
+
+.place button {
+	flex-grow: 1;
+	justify-content:flex-end ;
+	margin-left: 5px;
+	padding: 5px 10px;
+	border: none;
+	align-items: right;
+	background-color: #007bff;
+	color: #fff;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+/* .deleteButton{
+	align-items: right;
+	background-color: #f07bff;
+
+}
+.goButton{
+	align-items: right;
+} */
+.place button:hover {
+	background-color: #0056b3;
+}
+
+.PlacesList a {
+	text-decoration: none;
+	background-color: #a4b8bb;
+	color: #007bff;
+	font-size: 1.5rem;
+}
+
+.PlacesList a:hover {
+	text-decoration: underline;
+}
+
+.my-location img {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    padding: 2px;
+}
+
+
+
+
